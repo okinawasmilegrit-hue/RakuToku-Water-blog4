@@ -25,7 +25,7 @@ export default function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative w-full min-h-[100svh] flex flex-col items-center justify-center bg-[#08203c] shrink-0 pb-20 md:pb-32">
+      <section className="relative w-full h-[60vh] min-h-[400px] flex flex-col items-center justify-center bg-[#08203c] shrink-0">
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <img 
             src="https://picsum.photos/seed/kitchen_water/1920/1080?blur=2" 
@@ -35,7 +35,7 @@ export default function App() {
           />
           <div className="absolute inset-0 bg-gradient-to-br from-[#08203c]/70 via-[#0d4f7a]/55 to-[#1a6fa8]/35 z-10"></div>
         </div>
-        <div className="relative z-20 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
+        <div className="relative z-20 text-center px-4 max-w-4xl mx-auto flex flex-col items-center pt-8">
           <span className="bg-[#00c2ff] text-white text-xs md:text-sm font-bold uppercase tracking-wider px-3 py-1 mb-6 rounded shadow-sm">Maintenance-free Life</span>
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white leading-tight mb-6 drop-shadow-md">
             毎日のお水補充、<br className="sm:hidden"/>負担になっていませんか？<br className="hidden sm:block"/>
@@ -46,7 +46,7 @@ export default function App() {
         </div>
       </section>
 
-      <main className="flex-1 max-w-4xl mx-auto w-full px-4 md:px-8 py-10 md:py-14 gap-8 flex flex-col -mt-24 md:-mt-32 relative z-30">
+      <main className="flex-1 max-w-4xl mx-auto w-full px-4 md:px-8 py-10 md:py-14 gap-8 flex flex-col -mt-16 relative z-30">
         
         {/* Intro */}
         <div className="bg-white p-5 sm:p-6 md:p-8 rounded-xl shadow-sm border border-slate-100 flex flex-col gap-6">
@@ -215,11 +215,11 @@ export default function App() {
             </div>
           </div>
 
-          <div className="mt-4 bg-slate-50 border border-slate-100 rounded-xl p-4">
+          <div className="mt-6 sm:mt-8 w-full max-w-2xl mx-auto rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white">
             <img 
               src="https://rakutokuwater.smilegrit.com/wp-content/uploads/2026/02/琉宮祭LP素材-2.png" 
               alt="5段階フィルターの仕組み" 
-              className="w-full h-auto max-h-[300px] object-contain mx-auto" 
+              className="w-full h-auto block" 
               referrerPolicy="no-referrer" 
             />
           </div>
@@ -267,7 +267,7 @@ export default function App() {
             <img 
               src="https://rakutokuwater.smilegrit.com/wp-content/uploads/2026/04/ryugusai.png" 
               alt="キャンペーンモデル" 
-              className="w-48 md:w-64 h-auto mx-auto mb-8 drop-shadow-xl" 
+              className="w-full max-w-sm md:max-w-md h-auto mx-auto mb-8 rounded-xl shadow-2xl border border-white/20" 
               referrerPolicy="no-referrer" 
             />
 
