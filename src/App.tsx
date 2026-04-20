@@ -25,7 +25,7 @@ export default function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative w-full h-[60vh] min-h-[400px] flex flex-col items-center justify-center bg-[#08203c] shrink-0">
+      <section className="relative w-full min-h-[100svh] flex flex-col items-center justify-center bg-[#08203c] shrink-0 pb-20 md:pb-32">
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <img 
             src="https://picsum.photos/seed/kitchen_water/1920/1080?blur=2" 
@@ -35,67 +35,83 @@ export default function App() {
           />
           <div className="absolute inset-0 bg-gradient-to-br from-[#08203c]/70 via-[#0d4f7a]/55 to-[#1a6fa8]/35 z-10"></div>
         </div>
-        <div className="relative z-20 text-center px-4 max-w-4xl mx-auto pt-8 flex flex-col items-center">
+        <div className="relative z-20 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
           <span className="bg-[#00c2ff] text-white text-xs md:text-sm font-bold uppercase tracking-wider px-3 py-1 mb-6 rounded shadow-sm">Maintenance-free Life</span>
-          <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-6 drop-shadow-md">
-            毎日のお水補充、負担になっていませんか？<br className="hidden md:block"/>
-            <span className="text-2xl md:text-4xl mt-4 inline-block font-medium text-white/90">
-              給水型から「水道直結型」という新しい選択肢
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white leading-tight mb-6 drop-shadow-md">
+            毎日のお水補充、<br className="sm:hidden"/>負担になっていませんか？<br className="hidden sm:block"/>
+            <span className="text-lg sm:text-2xl md:text-4xl mt-4 sm:mt-6 inline-block font-medium text-white/90 leading-snug">
+              給水型から「水道直結型」という<br className="sm:hidden"/>新しい選択肢
             </span>
           </h1>
         </div>
       </section>
 
-      <main className="flex-1 max-w-4xl mx-auto w-full px-4 md:px-8 py-10 md:py-14 gap-8 flex flex-col -mt-16 relative z-30">
+      <main className="flex-1 max-w-4xl mx-auto w-full px-4 md:px-8 py-10 md:py-14 gap-8 flex flex-col -mt-24 md:-mt-32 relative z-30">
         
         {/* Intro */}
-        <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-100 flex flex-col gap-4">
-          <h3 className="text-lg md:text-xl font-bold text-[#0d4f7a] border-l-4 border-[#0d4f7a] pl-3 mb-2">日々の小さな負担に気づくとき</h3>
-          <p className="text-lg font-medium text-[#2c3e50] leading-relaxed">
-            家事やお仕事、育児に毎日忙しい中、重いお水を運んだり、何度もサーバーに補充したり、本当にお疲れ様です。
+        <div className="bg-white p-5 sm:p-6 md:p-8 rounded-xl shadow-sm border border-slate-100 flex flex-col gap-6">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#0d4f7a] border-l-4 border-[#0d4f7a] pl-3 leading-snug">
+            日々の小さな負担に<br className="sm:hidden"/>気づくとき
+          </h3>
+          <p className="text-base sm:text-lg font-medium text-[#2c3e50] leading-loose">
+            家事やお仕事、育児に毎日忙しい中。<br/>
+            重いお水を運んだり、何度もサーバーに補充したり…<br/>
+            本当にお疲れ様です。
           </p>
-          <p className="text-slate-600 leading-relaxed md:text-lg">
-            「重いボトルの交換がイヤだから、自分で水道水を注ぐ給水型のサーバーを選んだ」という方は非常に多いと思います。<br className="hidden md:block"/>
-            ボトルの受け取りや重い交換作業、そしてゴミ捨てもなくて、導入した最初はすごく画期的で便利に感じますよね。
-          </p>
+          <div className="bg-slate-50 p-5 rounded-lg border border-slate-100">
+            <p className="text-slate-600 leading-loose text-base sm:text-lg">
+              「重いボトルの交換がイヤだから、自分で水道水を注ぐ給水型のサーバーを選んだ」<br/>
+              という方は非常に多いと思います。
+            </p>
+            <p className="text-slate-600 leading-loose text-base sm:text-lg mt-4">
+              ボトルの受け取りや重い交換作業、そしてゴミ捨てもなくて、導入した最初はすごく画期的で便利に感じますよね。
+            </p>
+          </div>
         </div>
 
         {/* Section 1 */}
         <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-100 flex flex-col gap-6">
-          <h2 className="text-xl md:text-2xl font-bold text-[#0d4f7a] border-l-4 border-[#0d4f7a] pl-3">
-            お水を使う量が増えると、見えてくる「日々の小さな負担」
+          <h2 className="text-xl md:text-2xl font-bold text-[#0d4f7a] border-l-4 border-[#0d4f7a] pl-4 leading-normal">
+            お水を使う量が増えると見えてくる<br className="md:hidden"/>「日々の小さな負担」
           </h2>
-          <p className="text-slate-600 leading-relaxed md:text-lg">
-            ボトルレスで便利な給水型サーバーですが、ご家族の成長や、お家で過ごす時間の変化によって、少しずつこんな「気づき」を感じることはありませんか？
+          <p className="text-slate-600 leading-loose text-base sm:text-lg">
+            ボトルレスで便利な給水型サーバー。<br/>
+            ですが、ご家族の成長や、お家で過ごす時間の変化によって、少しずつこんな「気づき」を感じることはありませんか？
           </p>
 
-          <div className="flex flex-col gap-4">
-            <div className="flex flex-col md:flex-row items-start gap-4 bg-red-50 p-4 md:p-5 rounded-lg border border-red-100">
-              <AlertTriangle className="text-[#c0392b] w-6 h-6 self-start shrink-0 mt-0.5" />
-              <p className="text-[#c0392b] leading-relaxed font-medium">「お料理や麦茶作りで、あっという間にタンクが空になっちゃう…」</p>
+          <div className="flex flex-col gap-5 mt-2">
+            <div className="flex flex-col sm:flex-row items-start gap-4 bg-red-50 p-5 rounded-lg border border-red-100">
+              <AlertTriangle className="text-[#c0392b] w-6 h-6 self-start shrink-0 mt-1" />
+              <p className="text-[#c0392b] leading-loose font-medium text-base sm:text-lg">
+                「お料理や麦茶作りで、あっという間にタンクが空になっちゃう…」
+              </p>
             </div>
-            <div className="flex flex-col md:flex-row items-start gap-4 bg-slate-50 p-4 md:p-5 rounded-lg border border-slate-100">
-              <Clock className="text-slate-600 w-6 h-6 self-start shrink-0 mt-0.5" />
-              <p className="text-slate-600 leading-relaxed font-medium">「飲みたい時に『あ、水がない！』と気づいて、ピッチャーで何度も往復するのが地味に大変」</p>
+            <div className="flex flex-col sm:flex-row items-start gap-4 bg-slate-50 p-5 rounded-lg border border-slate-100">
+              <Clock className="text-slate-600 w-6 h-6 self-start shrink-0 mt-1" />
+              <p className="text-slate-600 leading-loose font-medium text-base sm:text-lg">
+                「飲みたい時に『あ、水がない！』と気づいて、ピッチャーで何度も往復するのが地味に大変」
+              </p>
             </div>
-            <div className="flex flex-col md:flex-row items-start gap-4 bg-slate-50 p-4 md:p-5 rounded-lg border border-slate-100">
-              <ShieldCheck className="text-slate-600 w-6 h-6 self-start shrink-0 mt-0.5" />
-              <p className="text-slate-600 leading-relaxed font-medium">「衛生面を考えてタンクをこまめに洗いたいけど、大きくて重いからシンクで洗うのが一苦労」</p>
+            <div className="flex flex-col sm:flex-row items-start gap-4 bg-slate-50 p-5 rounded-lg border border-slate-100">
+              <ShieldCheck className="text-slate-600 w-6 h-6 self-start shrink-0 mt-1" />
+              <p className="text-slate-600 leading-loose font-medium text-base sm:text-lg">
+                「衛生面を考えてタンクをこまめに洗いたいけど、大きくて重いからシンクで洗うのが一苦労」
+              </p>
             </div>
           </div>
 
-          <p className="text-slate-600 leading-relaxed md:text-lg mt-2">
+          <p className="text-slate-600 leading-loose text-base sm:text-lg mt-4 font-medium border-b border-slate-100 pb-6">
             最初は気にならなかった「お水を注ぐ」という作業も、1日に何度も繰り返すとなると、案外かなりの時間と労力を使っているものです。
           </p>
 
-          <figure className="overflow-hidden rounded-lg shadow-sm border border-slate-100 mt-4">
+          <figure className="overflow-hidden rounded-lg shadow-sm border border-slate-100 mt-2">
             <img 
               src="https://picsum.photos/seed/tired_water/800/450" 
               alt="また空になってるという日常のため息の瞬間" 
               className="w-full h-[250px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700" 
               referrerPolicy="no-referrer" 
             />
-            <figcaption className="text-center text-sm font-medium text-slate-500 py-3 bg-slate-50 border-t border-slate-100">
+            <figcaption className="text-center text-sm font-medium text-slate-500 py-4 bg-slate-50 border-t border-slate-100">
               お水を入れるの、1日何回やってるかな…？
             </figcaption>
           </figure>
@@ -103,43 +119,52 @@ export default function App() {
 
         {/* Section 2 */}
         <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-100 flex flex-col gap-6">
-          <h2 className="text-xl md:text-2xl font-bold text-[#0d4f7a] border-l-4 border-[#0d4f7a] pl-3">
-            「契約の縛り」で身動きが取れなくなることも
+          <h2 className="text-xl md:text-2xl font-bold text-[#0d4f7a] border-l-4 border-[#0d4f7a] pl-4 leading-normal">
+            「契約の縛り」で<br className="md:hidden"/>身動きが取れなくなることも
           </h2>
-          <p className="text-slate-600 leading-relaxed md:text-lg">
+          <p className="text-slate-600 leading-loose text-base sm:text-lg">
             また、給水型サーバーをお使いの方からよく耳にするのが、「契約期間」に関するお悩みです。
           </p>
-          <div className="bg-red-50 p-5 rounded-lg text-[#c0392b] leading-relaxed border border-red-100 font-medium">
-            「補充の手間やタンク洗いが負担になってきたから解約したいな…」と思っても、給水型サーバーは「5年」など非常に長い契約期間が設定されていることが多く、「高額な解約金がネックになって、仕方なく使い続けている」という声も少なくありません。
+          <div className="bg-red-50 p-6 rounded-lg text-[#c0392b] leading-loose border border-red-100 font-medium text-base sm:text-lg">
+            「補充の手間やタンク洗いが負担になってきたから解約したいな…」<br/><br/>
+            と思っても、給水型サーバーは「5年」など非常に長い契約期間が設定されていることが多く、<br/><br/>
+            「高額な解約金がネックになって、仕方なく使い続けている」<br/>
+            という声も少なくありません。
           </div>
-          <p className="text-slate-600 leading-relaxed md:text-lg">
+          <p className="text-slate-600 leading-loose text-base sm:text-lg mt-2">
             生活スタイルが変わっていく中で、長期間同じものを使い続けなければいけないのは、少し窮屈に感じてしまうこともありますよね。
           </p>
         </div>
 
         {/* Section 3 */}
         <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-100 flex flex-col gap-6">
-          <h2 className="text-xl md:text-2xl font-bold text-[#0d4f7a] border-l-4 border-[#0d4f7a] pl-3">
-            ご家庭に合った「ウォーターサーバー」の選び方
+          <h2 className="text-xl md:text-2xl font-bold text-[#0d4f7a] border-l-4 border-[#0d4f7a] pl-4 leading-normal">
+            ご家庭に合った<br className="md:hidden"/>「ウォーターサーバー」の選び方
           </h2>
-          <p className="text-slate-600 leading-relaxed md:text-lg">
+          <p className="text-slate-600 leading-loose text-base sm:text-lg">
             もし、「お水を飲む量がそれほど多くない」「1日に何度も補充しなくて済んでいる」というご家庭なら、今の給水型のままが合っているかもしれません。
           </p>
           
-          <div className="p-6 md:p-8 bg-[#f4f7f9] border border-slate-200 rounded-xl text-[#2c3e50] shadow-sm">
-            <p className="font-bold text-lg md:text-xl leading-relaxed">
-              一方で、「毎日のお水補充が日課になっていて負担を感じる」「タンクのお手入れの手間をなくしたい」「契約の縛りを気にせず使いたい」と感じ始めているなら、次の選択肢として<span className="text-[#0d4f7a] underline decoration-[#0d4f7a]/30 decoration-4 underline-offset-4 mx-1">「水道直結型」</span>のウォーターサーバーを検討してみるのも一つの手です。
+          <div className="p-6 sm:p-8 bg-[#f4f7f9] border border-slate-200 rounded-xl text-[#2c3e50] shadow-sm mt-2">
+            <p className="font-bold text-base sm:text-lg leading-loose">
+              一方で、<br/>
+              <span className="bg-white px-2 py-1 inline-block my-1 shadow-sm rounded text-[#0d4f7a]">「毎日のお水補充が日課になっていて負担を感じる」</span><br/>
+              <span className="bg-white px-2 py-1 inline-block my-1 shadow-sm rounded text-[#0d4f7a]">「タンクのお手入れの手間をなくしたい」</span><br/>
+              <span className="bg-white px-2 py-1 inline-block my-1 shadow-sm rounded text-[#0d4f7a]">「契約の縛りを気にせず使いたい」</span><br/><br/>
+              と感じ始めているなら、次の選択肢として<br className="hidden sm:block"/>
+              <span className="text-xl md:text-2xl text-[#0d4f7a] underline decoration-[#0d4f7a]/30 decoration-4 underline-offset-4 mx-1">「水道直結型」</span>
+              のウォーターサーバーを検討してみるのも一つの手です。
             </p>
           </div>
 
-          <figure className="overflow-hidden rounded-lg shadow-sm border border-slate-100">
+          <figure className="overflow-hidden rounded-lg shadow-sm border border-slate-100 mt-4">
             <img 
               src="https://picsum.photos/seed/smile_kitchen/800/450" 
               alt="補充しなくていいって、こんなに身軽なんだという雰囲気" 
               className="w-full h-[250px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700" 
               referrerPolicy="no-referrer" 
             />
-            <figcaption className="text-center text-sm font-medium text-slate-500 py-3 bg-slate-50 border-t border-slate-100">
+            <figcaption className="text-center text-sm font-medium text-slate-500 py-4 bg-slate-50 border-t border-slate-100">
               補充しなくていいって、こんなに身軽なんだ。
             </figcaption>
           </figure>
@@ -147,36 +172,45 @@ export default function App() {
 
         {/* Section 4 */}
         <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-100 flex flex-col gap-6">
-          <h2 className="text-xl md:text-2xl font-bold text-[#0d4f7a] border-l-4 border-[#0d4f7a] pl-3">
-            「お水補充なし・タンク洗いなし」の水道直結型という選択肢
+          <h2 className="text-xl md:text-2xl font-bold text-[#0d4f7a] border-l-4 border-[#0d4f7a] pl-4 leading-normal">
+            「補充なし・タンク洗いなし」の<br className="md:hidden"/>水道直結型という選択肢
           </h2>
-          <p className="text-slate-600 leading-relaxed md:text-lg">
-            最近、沖縄のママさんたちの間で少しずつ増えているのが、水道管に直接つないで使う「水道直結型ウォーターサーバー」への乗り換えです。<br/>
+          <p className="text-slate-600 leading-loose text-base sm:text-lg">
+            最近、沖縄のママさんたちの間で少しずつ増えているのが、水道管に直接つないで使う「水道直結型ウォーターサーバー」への乗り換えです。<br/><br/>
             たとえば、沖縄の水質に合わせて開発された「ラクトク（楽得）ウォーター」などの直結型サーバーには、こんな特徴があります。
           </p>
 
-          <div className="grid grid-cols-1 gap-4">
-            <div className="flex flex-col md:flex-row items-start gap-4 p-5 bg-slate-50 rounded-lg border border-slate-100">
-              <Droplets className="text-[#00c2ff] w-8 h-8 self-start shrink-0" />
+          <div className="grid grid-cols-1 gap-6 mt-4">
+            <div className="flex flex-col sm:flex-row items-start gap-4 p-6 bg-slate-50 rounded-xl border border-slate-100 shadow-sm">
+              <Droplets className="text-[#00c2ff] w-10 h-10 self-start shrink-0" />
               <div>
-                <h3 className="text-lg md:text-xl font-bold text-[#0d4f7a] mb-2">お水の補充が一切不要！「完全自動」</h3>
-                <p className="text-slate-600 md:text-lg leading-relaxed">水道管から直接お水が供給されるため、タンクに自分で水を注ぐ手間は一生必要ありません。「水が切れてる！」というイライラもなくなり、好きなだけ冷水とお湯が使えます。</p>
+                <h3 className="text-lg md:text-xl font-bold text-[#0d4f7a] mb-3 leading-normal">お水の補充が一切不要！<br className="sm:hidden"/>「完全自動」</h3>
+                <p className="text-slate-600 sm:text-lg leading-loose">
+                  水道管から直接お水が供給されるため、タンクに自分で水を注ぐ手間は一生必要ありません。<br/>
+                  「水が切れてる！」というイライラもなくなり、好きなだけ冷水とお湯が使えます。
+                </p>
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-start gap-4 p-5 bg-slate-50 rounded-lg border border-slate-100">
-              <Recycle className="text-[#00c2ff] w-8 h-8 self-start shrink-0" />
+            <div className="flex flex-col sm:flex-row items-start gap-4 p-6 bg-slate-50 rounded-xl border border-slate-100 shadow-sm">
+              <Recycle className="text-[#00c2ff] w-10 h-10 self-start shrink-0" />
               <div>
-                <h3 className="text-lg md:text-xl font-bold text-[#0d4f7a] mb-2">タンク洗いの手間もなし！</h3>
-                <p className="text-slate-600 md:text-lg leading-relaxed">大きなタンクを取り外してゴシゴシ洗う必要もありません。サーバー内部の自動クリーン機能などで、常に清潔な状態を保ちます。</p>
+                <h3 className="text-lg md:text-xl font-bold text-[#0d4f7a] mb-3 leading-normal">タンク洗いの手間もなし！</h3>
+                <p className="text-slate-600 sm:text-lg leading-loose">
+                  大きなタンクを取り外してゴシゴシ洗う必要もありません。<br/>
+                  サーバー内部の自動クリーン機能などで、常に清潔な状態を保ちます。
+                </p>
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-start gap-4 p-5 bg-slate-50 rounded-lg border border-slate-100">
-              <GlassWater className="text-[#00c2ff] w-8 h-8 self-start shrink-0" />
+            <div className="flex flex-col sm:flex-row items-start gap-4 p-6 bg-slate-50 rounded-xl border border-slate-100 shadow-sm">
+              <GlassWater className="text-[#00c2ff] w-10 h-10 self-start shrink-0" />
               <div>
-                <h3 className="text-lg md:text-xl font-bold text-[#0d4f7a] mb-2">沖縄専用5段階フィルターで「極上の軟水」へ</h3>
-                <p className="text-slate-600 md:text-lg leading-relaxed">沖縄の硬い水質や、気になる有機フッ素化合物（PFAS）などをしっかりキャッチする5段階の専用フィルターを搭載。お茶やコーヒー、お料理の味が美味しくなる「軟水」へと生まれ変わらせます。</p>
+                <h3 className="text-lg md:text-xl font-bold text-[#0d4f7a] mb-3 leading-normal">沖縄専用5段階フィルターで<br className="sm:hidden"/>「極上の軟水」へ</h3>
+                <p className="text-slate-600 sm:text-lg leading-loose">
+                  沖縄の硬い水質や、気になる有機フッ素化合物（PFAS）などをしっかりキャッチする5段階の専用フィルターを搭載。<br/>
+                  お茶やコーヒー、お料理の味が美味しくなる「軟水」へと生まれ変わらせます。
+                </p>
               </div>
             </div>
           </div>
@@ -204,9 +238,11 @@ export default function App() {
             <h2 className="text-2xl md:text-4xl font-bold mb-6 leading-tight">
               1ヶ月完全無料お試し！
             </h2>
-            <p className="text-white/90 mb-10 leading-relaxed max-w-2xl mx-auto md:text-lg">
-              「本当にゴミが出なくなってラクになるか試してみたい」<br/>「まずは味に納得してから決めたい」<br/>
-              そんなあなたのために、【1ヶ月完全無料お試しキャンペーン】を実施中です！
+            <p className="text-white/90 mb-10 leading-loose max-w-2xl mx-auto md:text-lg">
+              「本当にゴミが出なくなってラクになるか試してみたい」<br/>
+              「まずは味に納得してから決めたい」<br/><br/>
+              そんなあなたのために、<br className="md:hidden"/>
+              <span className="font-bold underline decoration-yellow-300 decoration-2 underline-offset-4">【1ヶ月完全無料お試しキャンペーン】</span>を実施中です！
             </p>
 
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 font-bold text-left w-full max-w-xl mx-auto mb-10 bg-white/5 p-6 rounded-xl border border-white/10">
