@@ -5,7 +5,9 @@ import {
   Droplets, 
   GlassWater, 
   Recycle, 
-  ShieldCheck 
+  ShieldCheck,
+  RefreshCw,
+  Sparkles
 } from "lucide-react";
 
 export default function App() {
@@ -28,7 +30,7 @@ export default function App() {
       <section className="relative w-full h-[60vh] min-h-[400px] flex flex-col items-center justify-center bg-[#08203c] shrink-0">
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <img 
-            src="https://picsum.photos/seed/kitchen_water/1920/1080?blur=2" 
+            src="https://images.unsplash.com/photo-1556910103-1c02745a8720?auto=format&fit=crop&q=80&w=1920" 
             className="w-full h-full object-cover transform scale-105" 
             alt="ウォーターサーバーのあるキッチン" 
             referrerPolicy="no-referrer" 
@@ -104,17 +106,15 @@ export default function App() {
             最初は気にならなかった「お水を注ぐ」という作業も、1日に何度も繰り返すとなると、案外かなりの時間と労力を使っているものです。
           </p>
 
-          <figure className="overflow-hidden rounded-lg shadow-sm border border-slate-100 mt-2">
-            <img 
-              src="https://picsum.photos/seed/tired_water/800/450" 
-              alt="また空になってるという日常のため息の瞬間" 
-              className="w-full h-[250px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700" 
-              referrerPolicy="no-referrer" 
-            />
-            <figcaption className="text-center text-sm font-medium text-slate-500 py-4 bg-slate-50 border-t border-slate-100">
-              お水を入れるの、1日何回やってるかな…？
-            </figcaption>
-          </figure>
+          <div className="overflow-hidden rounded-lg shadow-sm border border-slate-100 mt-2 bg-gradient-to-br from-slate-50 to-slate-100 h-[200px] md:h-[250px] flex flex-col items-center justify-center text-center p-6 gap-4">
+            <div className="bg-white p-4 rounded-full shadow-sm drop-shadow text-slate-400">
+              <RefreshCw className="w-10 h-10" />
+            </div>
+            <p className="font-bold text-slate-600 text-lg md:text-xl tracking-wide">
+              「あれ、もう水がない…」<br/>
+              <span className="text-sm md:text-base font-medium mt-2 block text-slate-500">1日何回繰り返していますか？</span>
+            </p>
+          </div>
         </div>
 
         {/* Section 2 */}
@@ -157,17 +157,15 @@ export default function App() {
             </p>
           </div>
 
-          <figure className="overflow-hidden rounded-lg shadow-sm border border-slate-100 mt-4">
-            <img 
-              src="https://picsum.photos/seed/smile_kitchen/800/450" 
-              alt="補充しなくていいって、こんなに身軽なんだという雰囲気" 
-              className="w-full h-[250px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700" 
-              referrerPolicy="no-referrer" 
-            />
-            <figcaption className="text-center text-sm font-medium text-slate-500 py-4 bg-slate-50 border-t border-slate-100">
-              補充しなくていいって、こんなに身軽なんだ。
-            </figcaption>
-          </figure>
+          <div className="overflow-hidden rounded-lg shadow-sm border border-slate-100 mt-4 bg-gradient-to-br from-blue-50 to-cyan-50 h-[200px] md:h-[250px] flex flex-col items-center justify-center text-center p-6 gap-4 border-b-4 border-b-[#00c2ff]">
+            <div className="bg-white p-4 rounded-full shadow-sm drop-shadow text-[#0c9bd3]">
+              <Sparkles className="w-10 h-10" />
+            </div>
+            <p className="font-bold text-[#0d4f7a] text-lg md:text-xl tracking-wide leading-loose">
+              お水補充ゼロの、新しい快適さ。<br/>
+              <span className="text-sm md:text-base font-medium mt-1 block text-[#0d4f7a]/70">もっと身軽なキッチンへ。</span>
+            </p>
+          </div>
         </div>
 
         {/* Section 4 */}
