@@ -52,6 +52,14 @@ export default function App() {
         
         {/* Intro */}
         <div className="bg-white p-5 sm:p-6 md:p-8 rounded-xl shadow-sm border border-slate-100 flex flex-col gap-6">
+          <figure className="overflow-hidden rounded-lg shadow-sm border border-slate-100 mb-2">
+            <img 
+              src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=800" 
+              alt="忙しい日常のキッチン風景" 
+              className="w-full h-[200px] md:h-[300px] object-cover hover:scale-105 transition-transform duration-700" 
+              referrerPolicy="no-referrer" 
+            />
+          </figure>
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#0d4f7a] border-l-4 border-[#0d4f7a] pl-3 leading-snug">
             日々の小さな負担に<br className="sm:hidden"/>気づくとき
           </h3>
@@ -106,15 +114,17 @@ export default function App() {
             最初は気にならなかった「お水を注ぐ」という作業も、1日に何度も繰り返すとなると、案外かなりの時間と労力を使っているものです。
           </p>
 
-          <div className="overflow-hidden rounded-lg shadow-sm border border-slate-100 mt-2 bg-gradient-to-br from-slate-50 to-slate-100 h-[200px] md:h-[250px] flex flex-col items-center justify-center text-center p-6 gap-4">
-            <div className="bg-white p-4 rounded-full shadow-sm drop-shadow text-slate-400">
-              <RefreshCw className="w-10 h-10" />
-            </div>
-            <p className="font-bold text-slate-600 text-lg md:text-xl tracking-wide">
-              「あれ、もう水がない…」<br/>
-              <span className="text-sm md:text-base font-medium mt-2 block text-slate-500">1日何回繰り返していますか？</span>
-            </p>
-          </div>
+          <figure className="overflow-hidden rounded-lg shadow-sm border border-slate-100 mt-2">
+            <img 
+              src="https://images.unsplash.com/photo-1585032767098-90022416b2aa?auto=format&fit=crop&q=80&w=800" 
+              alt="お水を補充する手間のイメージ" 
+              className="w-full h-[250px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700" 
+              referrerPolicy="no-referrer" 
+            />
+            <figcaption className="text-center text-sm font-medium text-slate-500 py-4 bg-slate-50 border-t border-slate-100">
+              「あれ、もう水がない…」1日何回繰り返していますか？
+            </figcaption>
+          </figure>
         </div>
 
         {/* Section 2 */}
@@ -122,6 +132,14 @@ export default function App() {
           <h2 className="text-xl md:text-2xl font-bold text-[#0d4f7a] border-l-4 border-[#0d4f7a] pl-4 leading-normal">
             「契約の縛り」で<br className="md:hidden"/>身動きが取れなくなることも
           </h2>
+          <figure className="overflow-hidden rounded-lg shadow-sm border border-slate-100 mt-2">
+            <img 
+              src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&q=80&w=800" 
+              alt="契約期間や支払いに悩む女性" 
+              className="w-full h-[200px] md:h-[300px] object-cover hover:scale-105 transition-transform duration-700" 
+              referrerPolicy="no-referrer" 
+            />
+          </figure>
           <p className="text-slate-600 leading-loose text-base sm:text-lg">
             また、給水型サーバーをお使いの方からよく耳にするのが、「契約期間」に関するお悩みです。
           </p>
@@ -157,15 +175,17 @@ export default function App() {
             </p>
           </div>
 
-          <div className="overflow-hidden rounded-lg shadow-sm border border-slate-100 mt-4 bg-gradient-to-br from-blue-50 to-cyan-50 h-[200px] md:h-[250px] flex flex-col items-center justify-center text-center p-6 gap-4 border-b-4 border-b-[#00c2ff]">
-            <div className="bg-white p-4 rounded-full shadow-sm drop-shadow text-[#0c9bd3]">
-              <Sparkles className="w-10 h-10" />
-            </div>
-            <p className="font-bold text-[#0d4f7a] text-lg md:text-xl tracking-wide leading-loose">
-              お水補充ゼロの、新しい快適さ。<br/>
-              <span className="text-sm md:text-base font-medium mt-1 block text-[#0d4f7a]/70">もっと身軽なキッチンへ。</span>
-            </p>
-          </div>
+          <figure className="overflow-hidden rounded-lg shadow-sm border border-slate-100 mt-4 border-b-4 border-b-[#00c2ff]">
+            <img 
+              src="https://images.unsplash.com/photo-1556910110-a5a63dfd393c?auto=format&fit=crop&q=80&w=800" 
+              alt="補充の手間がなくなり、笑顔で身軽にキッチンに立つ女性" 
+              className="w-full h-[250px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700" 
+              referrerPolicy="no-referrer" 
+            />
+            <figcaption className="text-center text-[#0d4f7a] text-sm md:text-base font-bold py-4 bg-blue-50 border-t border-slate-100">
+              お水補充ゼロの新しい快適さ。もっと身軽なキッチンへ。
+            </figcaption>
+          </figure>
         </div>
 
         {/* Section 4 */}
