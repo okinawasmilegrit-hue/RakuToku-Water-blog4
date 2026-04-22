@@ -132,14 +132,6 @@ export default function App() {
           <h2 className="text-xl md:text-2xl font-bold text-[#0d4f7a] border-l-4 border-[#0d4f7a] pl-4 leading-normal">
             「契約の縛り」で<br className="md:hidden"/>身動きが取れなくなることも
           </h2>
-          <figure className="overflow-hidden rounded-lg shadow-sm border border-slate-100 mt-2">
-            <img 
-              src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&q=80&w=800" 
-              alt="契約期間や支払いに悩む女性" 
-              className="w-full h-[200px] md:h-[300px] object-cover hover:scale-105 transition-transform duration-700" 
-              referrerPolicy="no-referrer" 
-            />
-          </figure>
           <p className="text-slate-600 leading-loose text-base sm:text-lg">
             また、給水型サーバーをお使いの方からよく耳にするのが、「契約期間」に関するお悩みです。
           </p>
@@ -177,8 +169,8 @@ export default function App() {
 
           <figure className="overflow-hidden rounded-lg shadow-sm border border-slate-100 mt-4 border-b-4 border-b-[#00c2ff]">
             <img 
-              src="https://images.unsplash.com/photo-1556910110-a5a63dfd393c?auto=format&fit=crop&q=80&w=800" 
-              alt="補充の手間がなくなり、笑顔で身軽にキッチンに立つ女性" 
+              src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&q=80&w=800" 
+              alt="お水補充ゼロの新しい快適さ" 
               className="w-full h-[250px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700" 
               referrerPolicy="no-referrer" 
             />
