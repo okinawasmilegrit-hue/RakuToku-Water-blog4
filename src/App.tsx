@@ -18,7 +18,9 @@ export default function App() {
         <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="font-bold text-xl text-[#0d4f7a] tracking-tight">RakuToku Water</div>
           <a 
-            href="#campaign"
+            href="https://liff.line.me/1656783300-KLG90La1/landing?follow=%40248vmjzs&lp=BZZmVJ&liff_id=1656783300-KLG90La1"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm font-bold bg-[#0d4f7a] text-white px-4 py-2 rounded-lg hover:bg-[#08203c] transition shadow-sm"
           >
             無料お試し
@@ -30,7 +32,7 @@ export default function App() {
       <section className="relative w-full h-[60vh] min-h-[400px] flex flex-col items-center justify-center bg-[#08203c] shrink-0">
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <img 
-            src="https://images.unsplash.com/photo-1556910103-1c02745a8720?auto=format&fit=crop&q=80&w=1920" 
+            src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&q=80&w=1920" 
             className="w-full h-full object-cover transform scale-105" 
             alt="ウォーターサーバーのあるキッチン" 
             referrerPolicy="no-referrer" 
@@ -116,7 +118,7 @@ export default function App() {
 
           <figure className="overflow-hidden rounded-lg shadow-sm border border-slate-100 mt-2">
             <img 
-              src="https://images.unsplash.com/photo-1585032767098-90022416b2aa?auto=format&fit=crop&q=80&w=800" 
+              src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=800" 
               alt="お水を補充する手間のイメージ" 
               className="w-full h-[250px] md:h-[350px] object-cover hover:scale-105 transition-transform duration-700" 
               referrerPolicy="no-referrer" 
@@ -282,7 +284,7 @@ export default function App() {
             />
 
             <a 
-              href="https://liff.line.me/1656783300-KLG90La1/landing?follow=%40248vmjzs&lp=Kkhob1&liff_id=1656783300-KLG90La1" 
+              href="https://liff.line.me/1656783300-KLG90La1/landing?follow=%40248vmjzs&lp=BZZmVJ&liff_id=1656783300-KLG90La1" 
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full max-w-xl mx-auto bg-[#ffea00] hover:bg-yellow-400 text-[#08203c] font-black text-lg md:text-2xl text-center py-5 px-6 rounded-xl shadow-lg transition-transform active:scale-95 flex items-center justify-center gap-2 group"
